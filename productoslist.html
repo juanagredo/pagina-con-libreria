@@ -85,114 +85,106 @@
 
 <body>
 
+    <div class="columns">
 
-    <section>
-        <div class="column is-1 is-offset-1 mt-6">
-            <h2 class="title is-2">
-             <a href="./productoslist.html"> New</a>  
-            </h2>
-            <hr>
-        </div>
 
-        <article>
-            <figure class="image is-16by9">
-                <img src="public/bmosHats.png" alt="">
-                <div id="background"></div>
-
-                <section id="bmo-text">
-
-                    <H1 class="title is-1">Some BMO hats</H1>
-
-                    <p class="has-centered-text">A new line of hats based on the most charismatic character of all.
-                        <br>bring the fun wherever you go. be the BMO among your friends.</p>
-
-                </section>
-            </figure>
-        </article>
-    </section>
+        <aside id="filtros" class="column is-2">
 
 
 
-    <section>
-
-        <div class="column is-4 is-offset-1 mt-6">
-            <h2 class="title is-2">
-                Meet the characters
-            </h2>
-            <hr id="caso-especial">
-        </div>
-
-        <section class="columns is-full">
-
-
-            <section class="column is-5 is-offset-1">
-
-                <section class="column is-full character-bg">
-                    <figure class="">
-                        <img src="public/finnthehuman.png" alt="">
-
-                        <p>finn the human</p>
-                    </figure>
-                </section>
-                <section class="column is-full character-bg">
-
-                    <figure class="">
-                        <img src="public/bubblegum.png" alt="">
-
-                        <p>bubblegum princess</p>
-                    </figure>
-                </section>
-
+            <section id="filtro-precios" class="">
+                <label for="filtro-precios">filtrar por precios: </label>
+                <ul>
+                    <li id="max-100" class"pFilter"> Hasta $100.000</li>
+                    <li id="entre100-200" class="pFilter"> Entre $100.000 y 200.000</li>
+                    <li id="entre200-300" class="pFilter"> Entre $200.000 y 300.000</li>
+                    <li id="min-300" class="pFilter"> Desde $300.000</li>
+                </ul>
 
             </section>
 
+            <section id="filtro-color">
+                <label for="filtro-precios">filtrar por color: </label>
 
-
-            <section class="column is-5">
-
-
-                <section class="column is-full character-bg">
-
-                    <figure class="">
-                        <img src="public/jake.png" alt="">
-
-                        <p>jake the dog</p>
-                    </figure>
-
-                </section>
-                <section class="column is-full character-bg">
-                    
-                    <figure class="">
-                        <img src="public/iceking.png" alt="">
-
-                        <p>iceking</p>
-                    </figure>
-
-                </section>
+                <div class="card_2">
+                    <ul>
+                        <li class="color-item" id="red"></li>
+                        <li class="color-item" id="green"></li>
+                        <li class="color-item" id="yellow"></li>
+                        <li class="color-item" id="blue"></li>
+                        <li class="color-item" id="gray"></li>
+                    </ul>
+                </div>
 
             </section>
+
+            <section id="filtro-descuento">
+                <label for="filtro-precios">filtrar por descuento: </label>
+
+
+                <ul>
+                    <li id="sin-descuento">con descuento</li>
+                    <li id="con-descuento">sin descuento</li>
+                    <input type="number" name="descuento: " id="descuentoNumerico" class="input is-small">
+                    <button class="button">buscar</button>
+                </ul>
+
+            </section>
+
+            <section id="filtro-tipo">
+                <label for="filtro-precios">filtrar por tipo: </label>
+
+                <div class="select is-rounded">
+                    <select name="tipo: " id="seleccionar-tipo">
+
+                        <option id="all">All</option>
+                        <option id="ropa">ropa</option>
+                        <option id="bolsos">bolsos</option>
+                        <option id="accesorios">accesorios</option>
+                        <option id="mercancia">mercancia</option>
+                        <option id="other">others</option>
+
+
+                    </select>
+
+                </div>
+            </section>
+
+            <section id="unFiltro filtro-personaje">
+                <label for="filtro-precios">filtrar por personaje: </label>
+
+                <div class="select is-rounded">
+                    <select name="personajes" id="seleccionar-tipo">
+
+
+                        <option id="all">All</option>
+                        <option id="finn">Finn</option>
+                        <option id="bubblegum">Bubblegum</option>
+                        <option id="bmo">Bmo</option>
+                        <option id="other">others</option>
+
+
+                    </select>
+                </div>
+
+            </section>
+
+        </aside>
+
+
+        <section id="products-container" class="columns is-10 is-flex-wrap-wrap">
 
         </section>
 
 
-    </section>
 
-
-    <section></section>
-
-
-    <section></section>
-
-
+    </div>
 </body>
-
 
 
 <footer class="footer mt-6">
 
-
     <section class="column is-6 is-offset-3">
-
 
         <section class="columns">
             <div class="content column is-10">
@@ -203,7 +195,6 @@
                     superpoderosas
                     y mucho más. Tambien puedes ver los mejores videos gratis de tus series favoritas.
                 </p>
-
 
             </div>
 
@@ -268,7 +259,10 @@
 
 
     <div>
+
         <script src="productos.js"></script>
+        <script src="mainproductos.js"></script>
+
         <link rel="stylesheet" href="styles.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">

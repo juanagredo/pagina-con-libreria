@@ -1,1 +1,231 @@
-@import 'bulma/css/bulma.css'
+@import 'bulma/css/bulma.css';
+
+.hdaHeader {
+    height: 36%;
+    background-color: #1C1304;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+
+}
+
+.navbar-item {
+
+    color: aliceblue;
+}
+
+/*
+CSS rules to specify families
+   
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+*/
+
+#logo {
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+
+.navbar-item img {
+    max-height: none;
+}
+
+/*.navbar-burger {}*/
+
+
+.footer {
+    background-color: #1C1304;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: rgb(196, 195, 189);
+    font-size: small;
+}
+
+#warnerlogo {
+    filter: invert(1);
+}
+
+hr {
+    margin-top: -16%;
+    height: 5px;
+    width: 55%;
+    background-color: #FEB825;
+
+}
+
+#caso-especial {
+    margin-top: -4%;
+}
+
+.title {
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    color: #1C1304;
+    font-size: 53px;
+}
+
+#background {
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) -6.83%,
+            rgba(28, 19, 4, 0) -6.82%, #1C1304 93.17%);
+
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#bmo-text {
+
+    position: absolute;
+    right: 0;
+    left: 124px;
+    top: 795;
+    bottom: 122px;
+
+
+}
+
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+h1.title {
+    color: #fff;
+}
+
+
+.character-bg {
+    margin-top: 60px;
+    height: 332px;
+    max-height: 332px;
+    width: 100%;
+    background-color: #FEB825;
+    text-align: center;
+
+}
+
+figure {
+    text-align: center;
+}
+
+figure>p {
+    margin: auto;
+    color: #1C1304;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+h2 {
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+img {
+    margin: auto;
+}
+
+p {
+    color: #1C1304;
+}
+
+section {
+    margin: auto;
+    padding: 20px;
+}
+
+.descuento {
+
+    color: rgb(56, 190, 112);
+
+}
+
+aside  {
+
+    background-color: #efeff8;
+
+}
+
+#filtros {
+
+    padding: auto;
+
+}
+
+
+
+
+.card_2 ul {
+    list-style: none;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+.card_2 ul li {
+    width: 24px;
+    height: 24px;    
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.card_2 ul li:hover {
+    transform: scale(1.1);
+}
+
+
+#red {
+    background-color: #ef5350;
+}
+#green {
+    background-color: #66bb6a;
+}
+#yellow {
+    background-color: #ffca28;
+}
+#blue {
+    background-color: #42a5f5;
+}
+#gray {
+    background-color: #bdbdbd;
+}
+
+
+
+
+#seleccionar-tipo {
+
+    outline: none;
+}
+
+#unFiltro {
+    padding: auto;
+    margin: auto;
+
+}
+
+
+
+
+
